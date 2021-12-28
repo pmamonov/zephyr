@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_MAIXBIT
+
+config BUILD_OUTPUT_BIN
+	default y
+
+config BOARD
+	default "maixbit"
+
+endif

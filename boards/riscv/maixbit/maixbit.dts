@@ -1,0 +1,20 @@
+/* Copyright (c) 2019 BayLibre SAS */
+/* SPDX-License-Identifier: Apache-2.0 */
+
+/dts-v1/;
+
+#include <k210.dtsi>
+
+/ {
+	chosen {
+		zephyr,console = &uarths0;
+		zephyr,shell-uart = &uarths0;
+		zephyr,sram = &sram0;
+	};
+};
+
+&uarths0 {
+	status = "okay";
+	current-speed = <115200>;
+	clock-frequency = <390000000>; /* FIXME */
+};
