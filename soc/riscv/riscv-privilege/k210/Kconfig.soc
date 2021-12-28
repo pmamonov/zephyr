@@ -1,0 +1,13 @@
+# Copyright (c) 2020 Cobham Gaisler AB
+# SPDX-License-Identifier: Apache-2.0
+
+choice
+	prompt "K210 implementation"
+	depends on SOC_SERIES_K210
+
+config SOC_K210
+	bool "K210"
+	select INCLUDE_RESET_VECTOR
+	select 64BIT
+
+endchoice

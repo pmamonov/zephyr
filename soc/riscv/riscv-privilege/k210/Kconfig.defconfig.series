@@ -1,0 +1,24 @@
+# Copyright (c) 2020 Cobham Gaisler AB
+# SPDX-License-Identifier: Apache-2.0
+
+if SOC_SERIES_K210
+
+config SOC_SERIES
+	default "k210"
+
+config SYS_CLOCK_HW_CYCLES_PER_SEC
+	default 7800000
+
+config RISCV_SOC_INTERRUPT_INIT
+	default y
+
+config RISCV_HAS_CPU_IDLE
+	default y
+
+config RISCV_GP
+	default y
+
+config NUM_IRQS
+	default 64
+
+endif
