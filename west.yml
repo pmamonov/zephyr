@@ -21,6 +21,8 @@ manifest:
   remotes:
     - name: upstream
       url-base: https://github.com/zephyrproject-rtos
+    - name: pmamonov
+      url-base: https://github.com/pmamonov
 
   #
   # Please add items below based on alphabetical order
@@ -163,7 +165,8 @@ manifest:
       revision: 8e303c264fc21c2116dc612658003a22e933124d
       path: modules/lib/lz4
     - name: mbedtls
-      revision: 3e3e58a92de76069730c63e0d524f40fea948a61
+      remote: pmamonov
+      revision: befe8a632d00e271846e8b15ca405da293645374
       path: modules/crypto/mbedtls
       groups:
         - crypto
